@@ -1,0 +1,67 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Global esports dashboard styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 212, 255, 0.2) rgba(13, 13, 26, 0.8);
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(13, 13, 26, 0.8);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 212, 255, 0.2);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.4);
+}
+
+/* Neon pulse animation */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 6px #39FF14, 0 0 12px #39FF14;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 12px #39FF14, 0 0 24px #39FF14, 0 0 40px #39FF1440;
+    opacity: 0.85;
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.7;
+    filter: brightness(1.3);
+  }
+}
+
+@keyframes scanlineMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100px; }
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(0, 212, 255, 0.25);
+  color: #E8E8F8;
+}
+
+/* Focus outline */
+button:focus-visible {
+  outline: 1px solid rgba(0, 212, 255, 0.6);
+  outline-offset: 2px;
+}
