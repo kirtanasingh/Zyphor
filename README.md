@@ -55,6 +55,7 @@ CSV Data → Pandas → Markov Model → Bayesian Model → Monte Carlo → Outp
 ## Project Structure
 
 Zyphor/
+
 ├── frontend/        # React dashboard and UI components  
 ├── backend/  
 │   ├── services/    # Prediction logic and API handlers  
